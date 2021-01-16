@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Section</title>
+    <link rel="stylesheet" href="payment_form.css">
+</head>
+<body>
+    <form>
+      <h1>Payment Form</h1>
+      <h2>Contact Information</h2>
+      <p class="asterik">* fields are important </p>
+      <p>Name:* <input type="text" name="name" required></p>
+      <fieldset>
+         <legend>Gender:*</legend> 
+        <p>
+          Male <input type="radio" name="gender" id="gender" required>
+          Female<input type="radio" name="gender" id="gender" required>
+      </p></fieldset>
+      <p>Phone Number:* <input type="number" name="number" id="number" required></p>
+      <p>Email Id: <input type="email" name="mail" id="mail"></p>
+      <p>Address: <textarea type="text" name="address" id="address"></textarea></p>
+      <p>Pincode: <input type="number" name="number" id="number"></p>
+      <hr>
+      <h2>Card Information</h2>
+      <p>Card Type:
+          <select name="card_type" id="card_type">
+              <option value="">--Select a card type--</option>
+              <option value="Visa">Visa</option>
+              <option value="Rupay">Rupay</option>
+              <option value="Master">Master</option>
+          </select>
+      </p>
+      <p>Card Number:* <input type="number" name="number" id="number" required></p>
+      <p>Expiry Date:* <input type="date" name="date" id="date" required></p>
+      <p>CVV:* <input type="password" name="password" id="password" required></p>
+      <input type="submit" value="Pay Now">
+      <a href="T&C" target="_blank">T&C</a>
+  </form>
+</body>
+</html>

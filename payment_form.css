@@ -1,0 +1,17 @@
+
+p{
+    color:black;
+}
+h1 {
+    color:crimson;
+    background-color: rgb(238, 175, 92);
+}
+h2{
+    color:darkgreen;
+}
+.asterik{
+    color:red;
+}
+a:hover {
+    color:purple
+}
