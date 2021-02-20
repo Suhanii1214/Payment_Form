@@ -7,21 +7,24 @@
     <link rel="stylesheet" href="payment_form.css">
 </head>
 <body>
+    <div class="container">
     <form>
-      <h1>Payment Form</h1>
+      <div class="heading">
+        <h1>Payment Form</h1>
+      </div>
       <h2>Contact Information</h2>
-      <p class="asterik">* fields are important </p>
-      <p>Name:* <input type="text" name="name" required></p>
+      <p class="asterik"><span>* fields are important</span></p>
+      <p>Name:* <input type="text" name="name" required placeholder="Enter Your Name"></p>
       <fieldset>
          <legend>Gender:*</legend> 
         <p>
           Male <input type="radio" name="gender" id="gender" required>
           Female<input type="radio" name="gender" id="gender" required>
       </p></fieldset>
-      <p>Phone Number:* <input type="number" name="number" id="number" required></p>
-      <p>Email Id: <input type="email" name="mail" id="mail"></p>
-      <p>Address: <textarea type="text" name="address" id="address"></textarea></p>
-      <p>Pincode: <input type="number" name="number" id="number"></p>
+      <p>Phone Number:* <input type="number" name="number" id="number" required placeholder="Enter Your number"></p>
+      <p>Email Id: <input type="email" name="mail" id="mail" placeholder="Enter your email"></p>
+      <p>Address: <textarea type="text" name="address" id="address" placeholder="Enter Your Address"></textarea></p>
+      <p>Pincode: <input type="number" name="number" id="number" placeholder="Enter Your Pincode"></p>
       <hr>
       <h2>Card Information</h2>
       <p>Card Type:
@@ -32,11 +35,16 @@
               <option value="Master">Master</option>
           </select>
       </p>
-      <p>Card Number:* <input type="number" name="number" id="number" required></p>
+      <p>Card Number:* <input type="number" name="number" id="number" required placeholder="Enter Your Card Number"></p>
       <p>Expiry Date:* <input type="date" name="date" id="date" required></p>
-      <p>CVV:* <input type="password" name="password" id="password" required></p>
-      <input type="submit" value="Pay Now">
-      <a href="T&C" target="_blank">T&C</a>
+      <p>CVV:* <input type="password" name="password" id="password" required placeholder="Enter CVV"></p>
+      <div class="payment_button">
+        <input type="submit" value="Pay Now">
+      </div>
+      <div class="terms">
+        <a href="#" target="_blank">Terms & Conditions</a>
+      </div>
   </form>
+  </div>
 </body>
 </html>
