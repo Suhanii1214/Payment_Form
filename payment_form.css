@@ -1,17 +1,65 @@
-
+*{
+    box-sizing: border-box;
+}
+body {
+    margin:15px 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding:10px;
+}
+.container {
+    background-color: linen;
+    border:1px solid lightgrey;
+    border-radius:10px;
+}
+.heading {
+    color:white;
+    padding:5px;
+    text-align:centre;
+    background-color: crimson;
+    border-radius:5px;
+}
+input[type="text"],input[type="email"],input[type="number"],input[type="password"],select,textarea {
+    padding:10px;
+    width:100%;
+    border:1px solid lightgrey;
+    border-radius:4px;
+    margin:10px;
+}
 p{
-    color:black;
+   font-weight: 400;
+   padding:8px;
 }
-h1 {
-    color:crimson;
-    background-color: rgb(238, 175, 92);
+fieldset{
+    background-color: white;
+    border: 1px solid lightgrey;
+    border-radius:5px;
+    padding:10px;
 }
-h2{
-    color:darkgreen;
+input[type="submit"] {
+    font-size:30px;
+    background-color: yellowgreen;
+    color:white;
+    opacity: 80%;
+    border-radius: 5px;
+    cursor:pointer;
+    width:30%;
 }
-.asterik{
+input[type="submit"]:hover{
+    opacity:100%;
+}
+.payment_button {
+    padding:5px 20px;
+}
+.terms {
+    padding:10px;
+    background-color:crimson;
+    border-radius:5px;
+}
+a {
+    color:white;
+    font-size:20px;
+}
+span {
     color:red;
 }
-a:hover {
-    color:purple
-}
+
